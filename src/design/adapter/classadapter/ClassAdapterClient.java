@@ -9,7 +9,7 @@ public class ClassAdapterClient {
 
     public static void main(String[] args) {
         Phone phone = new Phone();
-        Voltage200VTo5VAdapter voltage200VTo5VAdapter = new Voltage200VTo5VAdapter();
-        phone.charging(voltage200VTo5VAdapter);
+        ClassVoltageAdapter classVoltageAdapter = new ClassVoltageAdapter();
+        phone.charging(classVoltageAdapter);
     }
 }
