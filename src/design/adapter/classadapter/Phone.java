@@ -18,4 +18,10 @@ public class Phone {
             System.out.println("手机充电电压过高，无法充电");
         }
     }
+
+    public static void main(String[] args) {
+        Phone phone = new Phone();
+        ClassVoltageAdapter classVoltageAdapter = new ClassVoltageAdapter();
+        phone.charging(classVoltageAdapter);
+    }
 }

@@ -20,4 +20,11 @@ public class Phone {
             System.out.println("手机充电电压过高，无法充电");
         }
     }
+
+    public static void main(String[] args) {
+        Phone phone = new Phone();
+        Voltage220V voltage220V = new Voltage220V();
+        ObjectVoltageAdapter voltageAdapter = new ObjectVoltageAdapter(voltage220V);
+        phone.charging(voltageAdapter);
+    }
 }
